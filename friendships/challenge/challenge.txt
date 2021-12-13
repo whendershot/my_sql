@@ -1,0 +1,20 @@
+Assignment: Friendships
+Objectives:
+Practice designing ERDs with self joins
+Create an ERD to represent the database for an application that tracks users and their friends.
+
+Each user should have an id, first_name, last_name, created_at and updated_at. Create a self join relationship (many to many to same table), where a user can have a friend (another user from the same table). Use the MySQL Workbench for creating this diagram.
+
+Create a new model (ERD)
+
+Name the schema friendships_schema
+
+Create a table called users and add the following fields: id, first_name, last_name, created_at and updated_at
+
+Create a many to many relationship to the users table and rename it friendships
+
+Add the following fields into the friendship table: id, created_at and updated_at
+
+Rename the relationship fields to user_id and friend_id
+
+Take a screen shot of the ERD and upload the .png file
