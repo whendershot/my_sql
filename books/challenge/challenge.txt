@@ -1,0 +1,24 @@
+Assignment: Books
+Objectives:
+Practice designing ERDs with many-to-many relationships.
+Create an ERD to represent the database for an application that tracks authors, books, and author's favorite books.
+
+Each book should have an id, title, and each author should be able to save a list of their favorite books. Use the MySQL Workbench for creating this database.
+
+Create a new model (ERD)
+
+Name the schema books_schema
+
+Create a table called authors
+
+Add the following fields to the authors table: id, name, created_at and updated_at
+
+Create a table called books
+
+Add the following fields to the books table: id, title, num_of_pages, created_at, and updated_at
+
+Create a many to many relationship between authors and books and rename the joining table to favorites
+
+Change the field names to the singular pronoun. ie. author_id and book_id
+
+Take a screen shot of the ERD and upload the .png file
