@@ -3,7 +3,7 @@ Objectives:
 Practice designing ERDs
 Create an ERD for the User Dashboard wireframe.
 
-You can download the wireframe here.
+You can download the wireframe here. https://s3.amazonaws.com/General_V88/boomyeah/company_209/chapter_2692/handouts/chapter2692_3350_MVC-advanced-assignment.pdf
 
 Note: There are many ways to approach structuring data for large web applications. Try thinking through some of the actions a user can do and make your ERD fit the functionality. 
 
