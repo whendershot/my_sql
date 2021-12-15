@@ -38,7 +38,7 @@ SELECT
     CountryCode,
     COUNT(*) AS num_cities
 FROM 
-    City
+    world.city
 GROUP BY
     CountryCode
 ) AS a
@@ -48,7 +48,7 @@ LEFT JOIN
         Name,
         Code
     FROM
-        country
+        world.country
 ) AS b
 ON
     a.CountryCode = b.Code
@@ -60,7 +60,7 @@ ORDER BY
 SELECT 
     *
 FROM
-    city
+    world.city
 WHERE
     Population > 500000 AND
     CountryCode = 'MEX'
@@ -72,7 +72,7 @@ ORDER BY
 SELECT
     *
 FROM
-    countrylanguage
+    world.countrylanguage
 WHERE
     Percentage > 89.0
 ORDER BY
@@ -83,7 +83,7 @@ ORDER BY
 SELECT
     *
 FROM
-    country
+    world.country
 WHERE
     SurfaceArea < 501.0 AND
     Population > 100000
@@ -93,7 +93,7 @@ WHERE
 SELECT 
     *
 FROM
-    country
+    world.country
 WHERE
     GovernmentForm = 'Constitutional Monarchy' AND
     Capital > 200 AND
@@ -112,7 +112,7 @@ SELECT
     Code,
     Name
 FROM
-    countries
+    world.countries
 WHERE
     Name = 'Argentina'
 ) AS countries
@@ -124,9 +124,10 @@ SELECT
     District,
     Population
 FROM
-    city
+    world.city
 WHERE
-    District = 'Buenos Aires'
+    District = 'Buenos Aires' AND
+    Population > 500000
 ) AS cities
 ON
     countries.Code = cities.CountryCode
@@ -137,7 +138,7 @@ SELECT
     Region,
     COUNT(*) AS num_countries
 FROM
-    country
+    world.country
 GROUP BY
     Region
 ORDER BY
