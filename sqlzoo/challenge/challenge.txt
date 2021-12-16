@@ -1,0 +1,8 @@
+Assignment: SQLZoo
+Objectives:
+Practice SQL queries
+Complete the tutorial at http://sqlzoo.net/.
+
+Notice how these SQL queries you learned are NOT just applicable for MySQL, but also on Oracle, SQL server, Postgres, Ingres, and any other SQL database you find. Finishing all the tutorials there will deepen your understanding on MySQL.
+
+Note: In the tutorial, they discuss nested functions and queries. Nested functions and queries should not be used unless it is absolutely necessary.  
